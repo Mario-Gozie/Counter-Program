@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+// React hook = Special function that allows functional components to use React features without class components (React v16.8) (useState, useEffect, useContext, useReducer, useCallback, and more)
+
+// useState() = A React hook that allows the creation of a stateful variable AND a setter function to update its value in the virtual DOM. [name, setName]
+
+// import logo from './logo.svg';
+import Counter from "./Assets/Counter";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Counter />;
 }
 
 export default App;
